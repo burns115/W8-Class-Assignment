@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client.js';
+import ReactDOM from 'react-dom/client';
 import App from './App.js';
 import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -7,7 +7,7 @@ import { ProductsList } from './components/products/ProductsList';
 import { ProductDetail } from './components/products/ProductDetail';
 import { RouteNotFound } from './components/RouteNotFound';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>

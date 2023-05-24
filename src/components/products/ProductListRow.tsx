@@ -17,7 +17,7 @@ export const ProductListRow = ({ product }:Props) => {
         alignItems: 'center',
       }}
     >
-      <Thumbnail description={product.description} image={product.image} width={0} />
+      <Thumbnail description={product.description} image={product.image} />
       <Link key={product.id} to={`${product.id}`}>
         {product.title}
       </Link>
